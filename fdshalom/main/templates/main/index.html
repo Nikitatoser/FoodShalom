@@ -1,0 +1,25 @@
+{% extends 'main/simple.html' %}
+
+{% block title %}
+Home - FoodShalom
+{% endblock %}
+
+{% block mid %}
+<div class="header text-center" style= background-size: cover; background-position: center; height: 100vh; color: white;>
+    <div class="container h-100 d-flex flex-column justify-content-center align-items-center">
+        <h1 class="header-title">FOOD AS THE MEANING OF LIFE</h1>
+        <p>ENJOYMENT</p>
+
+        
+                <a href="{% url 'portfolio' %}" class="bit">
+                    <div class="box-3">
+                        <div class="btn btn-three">
+                            <span>SHOW PRODUCTS</span>
+                        </div>
+                    </div>
+                </a>
+            
+    </div>
+</div>
+{% endblock %}
+

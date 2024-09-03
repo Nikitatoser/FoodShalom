@@ -1,0 +1,77 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodShalom</title>
+    <link rel="icon" href="{% static 'main/img/restor.png' %}">
+    <!-- Підключення Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Підключення власного CSS -->
+    <link href="{% static 'main/css/main.css' %}" rel="stylesheet">
+    <!-- Додаткові стилі -->
+    <style>
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Навігаційна панель -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="{% static 'main/img/restor.png' %}" alt="" width="30" height="30" class="d-inline-block align-top">
+            FD.Shalom
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'home' %}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'portfolio' %}">Store</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'about' %}">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Основний вміст сторінки -->
+    <div >
+        {% block mid %}
+        {% endblock %}
+    </div>
+
+    <!-- Футер -->
+    <footer class="bg-light text-center text-lg-start mt-auto">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">FoodShalom</h5>
+                    <p>© 2024 Food as the Meaning of Life</p>
+                    <p>Website created by Mykyta Honcharenko</p>
+                    
+                </div>
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0 text-center">
+                    <a href="https://www.instagram.com"><img src="{% static 'main/img/instagram.png' %}" alt="" width="32px" class="mx-2"></a>
+                    <a href="https://web.telegram.org"><img src="{% static 'main/img/telegram.png' %}" alt="" width="32px" class="mx-2"></a>
+                    <a href="https://www.youtube.com/"><img src="{% static 'main/img/youtube.png' %}" alt="" width="32px" class="mx-2"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Підключення Bootstrap JS та залежностей -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

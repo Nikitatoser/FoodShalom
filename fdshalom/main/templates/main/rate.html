@@ -1,0 +1,41 @@
+{% extends 'main/simple.html' %}
+
+{% block title %}
+Rates - FoodShalom
+{% endblock %}
+
+{% block mid %}
+
+<body style="height: 100vh; margin: 0;">
+    <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+        <form method="POST" action="" class="col-md-6" style="height: 80%; display: flex; flex-direction: column; justify-content: space-between;">
+            {% csrf_token %}
+            {{ form.as_p }}
+
+            <!-- Елемент для відображення вибраного значення повзунка -->
+            <div class="form-group">
+                <label for="rating-range">Rate: <span id="rating-value">3.0</span></label>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <span>{{error}}</span>
+
+    <!-- JavaScript для оновлення значення -->
+    <script>
+        const slider = document.getElementById('rating-range');
+        const output = document.getElementById('rating-value');
+        
+        // Початкове значення
+        output.innerHTML = slider.value;
+    
+        // Оновлення при зміні значення повзунка
+        slider.oninput = function() {
+            output.innerHTML = this.value;
+        }
+    </script>
+</body>
+
+{% endblock %}
+

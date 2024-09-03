@@ -1,0 +1,456 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Montserrat Alternates", sans-serif;
+    margin: 0px;
+    padding: 0;
+    color: black;
+  }
+  .shad {
+    box-shadow: rgba(126, 155, 189, 0.35) 0px 5px 15px;
+  }
+  .p {
+    position: fixed;
+  }
+  .heat {
+    width: 100%;
+    padding-left: 40px;
+    display: flex;
+    background-color: #ffffff;
+  
+    height: 80px;
+    flex-direction: row;
+  }
+  .heat-img {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .heat h2 {
+    font-size: 42px;
+    margin-top: 0;
+    line-height: 33px;
+    margin-left: 15px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .heat-link {
+    display: flex;
+    margin-left: auto;
+    margin-right: 40px;
+    line-height: 45px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .heat-link > * + * {
+    margin-left: 50px;
+  }
+  .heat-link a {
+    letter-spacing: 0.1em;
+    font-size: 20px;
+    color: black;
+    transition: transform 0.3s ease-in;
+  }
+  .heat-link a:hover {
+    transform: scale(1.1);
+  }
+  
+  .header {
+    max-width: 100%;
+    height: 100vh;
+  
+    background-image: url("/static/main/img/bulka.jpg");
+    background-size: 100%;
+  
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .header-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 130%;
+    font-weight: 700;
+    font-size: 54px;
+  }
+  .header p {
+    line-height: 130%;
+    font-weight: 600;
+    font-size: 24px;
+    margin-top: 5px;
+  }
+  
+  .bit{
+    color: #ffffff;
+  }
+  .btn-three {
+    
+    color: #000000;
+    transition: all 0.5s;
+    position: relative;
+  }
+  .btn-three::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(255,255,255,0.1);
+    transition: all 0.3s;
+  }
+  .btn-three:hover::before {
+    opacity: 0 ;
+    transform: scale(0.5,0.5);
+  }
+  .btn-three::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border: 1px solid rgba(250, 221, 221, 0.5);
+    transform: scale(1.2,1.2);
+  }
+  .btn-three:hover::after {
+    opacity: 1;
+    transform: scale(1,1);
+  }
+
+  .button {
+    display: inline-block;
+    border: 2px solid white;
+    border-radius: 5px;
+    height: 40px;
+    color: white;
+    padding-right: 12px;
+    padding-left: 12px;
+    line-height: 36px;
+    font-size: 16px;
+    font-weight: 600;
+  
+    transition: 0.3s ease-in;
+  }
+  .button:hover {
+    background-color: rgb(210, 180, 140, 0.5);
+    border-color: #464547;
+    transform: scale(1.1);
+  }
+  
+  .footer {
+    background-color: white;
+    height: 120px;
+    padding-top: 25px;
+  }
+  .link {
+    display: flex;
+    justify-content: center;
+  }
+  .link-img {
+    transition: transform 0.2s ease-in;
+  }
+  .link-img:hover {
+    transform: scale(1.3);
+  }
+  
+  .link > * + * {
+    margin-left: 30px;
+  }
+  
+  .footer p {
+    font-size: 16px;
+    line-height: 1.3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Second page*/
+.boddy {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 35px;
+    max-width: 100%;
+    height: 100vh;
+  
+    justify-content: center;
+  
+    color: white;
+    text-align: center;
+    display: flex;
+  }
+  .card {
+    width: 600px;
+    max-height: 95%;
+    box-shadow: rgba(0, 0, 0, 0.35) 10px 10px 20px;
+    border-radius: 10%;
+    transition: 0.5s ease-in;
+    margin-left: 25px;
+  }
+  .card:first-child {
+    margin-left: 0;
+  }
+  .card:hover {
+    transform: scale(1.03);
+  }
+  .card h2 {
+    font-size: 45px;
+    line-height: 1.3;
+    margin-bottom: 15px;
+  }
+  .button-card {
+    font-size: 24px;
+    height: 50px;
+    display: inline-block;
+    border: 2px solid white;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 44px;
+  
+    transition: 0.4s ease-in;
+  }
+  .button-card:hover {
+    background-color: rgb(210, 180, 140, 0.5);
+    transform: scale(1.1);
+  }
+  .c1 {
+    background-image: url(./фото/с1.jpg);
+    background-size: 120%;
+  }
+  .c2 {
+    background-image: url(./фото/kruasan.jpg);
+    background-size: 130%;
+  }
+  .c3 {
+    background-image: url(./фото/kor.jpg);
+    background-size: 130%;
+  }
+  
+  /*3 Page*/
+  .myjob {
+    padding-top: 125px;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    border-radius: 5%;
+    display: flex;
+    padding: 50px;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    background-image: url('{% static "main/img/myjob.jpg" %}');
+    background-size: cover;
+    background-position: center;
+}
+
+.content2 {
+    border-radius: 5%;
+    display: flex;
+    padding: 50px;
+    margin-left: 25px;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    background-color: rgb(221, 209, 194);
+}
+
+.myjob-txt {
+    margin-top: 50px;
+    max-width: 480px;
+    line-height: 1.3;
+    color: black;
+}
+
+  /*Food pages*/
+  .folbod {
+    padding-top: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+    max-width: 100%;
+    height: 115px;
+    justify-content: center;
+    color: black;
+    display: flex;
+  }
+  
+  .folbod-txt {
+    display: flex;
+    transform: translateX(-22%);
+    height: 100px;
+  }
+  .folbod-txt h1 {
+    font-size: 54px;
+    margin: 0;
+  }
+  .folbod-txt a {
+    font-size: 18px;
+    margin-top: 32px;
+    margin-right: 15px;
+    color: black;
+    height: 10px;
+    transition: 0.3s ease-in;
+  }
+  .folbod-txt a:hover {
+    transform: translateX(-10px);
+  }
+  .folbod-txt1 {
+    display: flex;
+    transform: translateX(-11%);
+    height: 100px;
+  }
+  .folbod-txt1 h1 {
+    font-size: 54px;
+    margin: 0;
+  }
+  .folbod-txt1 a {
+    font-size: 18px;
+    margin-top: 32px;
+    margin-right: 15px;
+    color: black;
+    height: 10px;
+    transition: 0.3s ease-in;
+  }
+  .folbod-txt1 a:hover {
+    transform: translateX(-10px);
+  }
+  .photos {
+    display: flex;
+    flex-direction: row;
+    margin-left: 75px;
+    margin-right: 75px;
+    height: 80vh;
+    background-color: rgb(245, 240, 234);
+  }
+  
+  /*Photos design*/
+  .leftp {
+    margin: 0;
+    width: 50%;
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-bottom: 25px;
+  }
+  .topp {
+    display: flex;
+    height: 50%;
+    flex-direction: row;
+  }
+  .topp-left {
+    background-size: 155%;
+    background-position: center;
+    width: 48%;
+    border-radius: 10%;
+    transition: 0.5s ease-in;
+  }
+  .topp-right {
+    background-size: 100%;
+    background-position: center;
+    width: 48%;
+    border-radius: 10%;
+    margin-left: 4%;
+    transition: 0.5s ease-in;
+  }
+  .botp {
+    background-size: 100%;
+    background-position: center;
+    margin-top: 20px;
+    height: 46%;
+    border-radius: 10%;
+    transition: 0.5s ease-in;
+  }
+  .rightp {
+    background-size: 100%;
+    background-position: center;
+    margin: 25px;
+    width: 50%;
+    border-radius: 10%;
+  
+    transition: 0.5s ease-in;
+  }
+  .can:hover {
+    transform: scale(1.04);
+  }
+  
+
+
+
+
+  .full-width-block {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.full-width-block::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: inherit;
+    transition: transform 0.6s ease-in-out;
+    z-index: 0;
+}
+
+.full-width-block:hover::before {
+    transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+}
+
+.overlay h5 {
+  text-transform: uppercase;
+  font-size: 10rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  margin-bottom: 1rem;
+}
+
+.overlay .btn {
+  font-size: 1.5rem;
+  letter-spacing: 0.1em;
+}
+
+
+/* кнопки футер */
+

@@ -1,0 +1,24 @@
+{% extends 'main/simple.html' %}
+
+{% block title %}
+Store - FoodShalom
+{% endblock %}
+
+{% block mid %}
+
+<body>
+
+    <main class="container-fluidnt">
+    {% for el in art %}
+    <a href="{% url 'portf-art' el.id %}" class="full-width-block-link">
+        <div class="full-width-block" style="background-image: url('{{ el.image1.url }}');">
+            <div class="overlay">
+                <h5 class="card-title">{{ el.title }}</h5>
+            </div>
+        </div>
+    </a>
+    {% endfor %}
+</main>
+   
+</body>
+{% endblock %}
