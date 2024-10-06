@@ -1,10 +1,10 @@
-Bakery Website
+# 🥐 FdShalom – Bakery Website
 
 ![Main Screenshot](./fotogit/main_page.png) <!-- Main screenshot of your site goes here -->
 
 ## 🌟 Project Overview
 
-[**FdShalom**] is a bakery website where visitors can explore our freshly baked goods, view products, read reviews, and share their own feedback. The site features a modern design, mobile responsiveness, and interactive elements to enhance the user experience.
+**FdShalom** is a bakery website where visitors can explore our freshly baked goods, view products, read reviews, and share their own feedback. The site features a modern design, mobile responsiveness, and interactive elements to enhance the user experience.
 
 ### Key Features:
 - 🛍️ **Homepage:** An inviting introduction to our bakery, highlighting our signature products.
@@ -17,19 +17,23 @@ Bakery Website
 
 ## 🖼️ Screenshots
 
-### About Me Page
-![About Me Page Screenshot](./fotogit/about_page.png) <!-- Add screenshot of the about me page -->
+### Homepage
+![Homepage Screenshot](./fotogit/main_page.png) <!-- Add screenshot of the homepage -->
 
 ### Products Page
 ![Products Page Screenshot](./fotogit/food_page.png) <!-- Add screenshot of the products page -->
+
+### Detail Products Page
+![Products Page Screenshot](./fotogit/detail_page.png) <!-- Add screenshot of the products page -->
 
 ### Reviews Page
 ![Reviews Page Screenshot](./fotogit/rate_page.png) <!-- Add screenshot of the reviews page -->
 
 ### Feedback Form Page
-![Feedback Form Screenshot](./fotogit/rating.png) <!-- Add screenshot of the feedback form page -->
+![Feedback Form Screenshot](./fotogit/rating_page.png) <!-- Add screenshot of the feedback form page -->
 
-
+### About Me Page
+![About Me Page Screenshot](./fotogit/about_page.png) <!-- Add screenshot of the about me page -->
 
 ---
 
@@ -45,3 +49,4 @@ Bakery Website
   - Dynamic pages for rendering content based on user interactions
 
 ---
+
