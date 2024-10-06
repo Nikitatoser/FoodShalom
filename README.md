@@ -1,10 +1,10 @@
-# 🥐 [Bakery Name] – Bakery Website
+Bakery Website
 
-![Main Screenshot](path_to_screenshot) <!-- Main screenshot of your site goes here -->
+![Main Screenshot](./fotogit/main_page.png) <!-- Main screenshot of your site goes here -->
 
 ## 🌟 Project Overview
 
-[**Bakery Name**] is a bakery website where visitors can explore our freshly baked goods, view products, read reviews, and share their own feedback. The site features a modern design, mobile responsiveness, and interactive elements to enhance the user experience.
+[**FdShalom**] is a bakery website where visitors can explore our freshly baked goods, view products, read reviews, and share their own feedback. The site features a modern design, mobile responsiveness, and interactive elements to enhance the user experience.
 
 ### Key Features:
 - 🛍️ **Homepage:** An inviting introduction to our bakery, highlighting our signature products.
@@ -16,9 +16,6 @@
 ---
 
 ## 🖼️ Screenshots
-
-### Homepage
-![Homepage Screenshot](./fotogit/main_page.png) <!-- Add screenshot of the homepage -->
 
 ### Products Page
 ![Products Page Screenshot](./fotogit/food_page.png) <!-- Add screenshot of the products page -->
