@@ -17,17 +17,19 @@ Bakery Website
 
 ## 🖼️ Screenshots
 
+### About Me Page
+![About Me Page Screenshot](./fotogit/about_page.png) <!-- Add screenshot of the about me page -->
+
 ### Products Page
 ![Products Page Screenshot](./fotogit/food_page.png) <!-- Add screenshot of the products page -->
 
 ### Reviews Page
-![Reviews Page Screenshot](./fotogit/reviews_page.png) <!-- Add screenshot of the reviews page -->
+![Reviews Page Screenshot](./fotogit/rate_page.png) <!-- Add screenshot of the reviews page -->
 
 ### Feedback Form Page
-![Feedback Form Screenshot](./fotogit/feedback_page.png) <!-- Add screenshot of the feedback form page -->
+![Feedback Form Screenshot](./fotogit/rating.png) <!-- Add screenshot of the feedback form page -->
 
-### About Me Page
-![About Me Page Screenshot](./fotogit/about_page.png) <!-- Add screenshot of the about me page -->
+
 
 ---
 
